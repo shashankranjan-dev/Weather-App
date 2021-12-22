@@ -17,7 +17,7 @@ function Search() {
     e.preventDefault();
     if (city) {
       axios
-        .get("http://api.weatherapi.com/v1/current.json", {
+        .get("https://api.weatherapi.com/v1/current.json", {
           params: {
             key: "509236b530fb4065bef184627212112",
             q: city,
