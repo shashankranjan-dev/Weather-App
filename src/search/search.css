@@ -1,0 +1,39 @@
+.banner{
+	position: relative;
+}
+input[type=text] {
+  margin: 1vh;
+  width: 400px;
+  align-self: center;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  font-size: 18px;
+  background: white;
+  background-position: 10px 10px; 
+  padding: 12px 20px 12px 40px;
+}
+input[type=text]:focus {
+  width: 20.75%;
+}
+
+.btn-search{
+  width: 100px;
+  height: 50px;
+  border-radius: 50px ;
+  background:#fff;
+  color: #000;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.weather-data{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.temp{
+  margin: 0 auto;
+  color: #fff;
+  font-size:30px;
+}
