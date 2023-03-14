@@ -45,6 +45,7 @@ function Search() {
               name="search"
               value={city}
               onChange={(e) => setCity(e.target.value)}
+              pattern="[a-z]*"
             />
             <button type="submit" className="btn-search">
               Get weather
