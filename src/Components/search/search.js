@@ -47,12 +47,13 @@ function Search() {
               onChange={(e) => setCity(e.target.value)}
             />
             <button type="submit" className="btn-search">
-              search
+              Get weather
             </button>
           </form>
         </div>
       </center>
 
+      {/* weather data for cold places*/}
       <div className="weather-data">
         <div>
           {(() => {
@@ -61,30 +62,33 @@ function Search() {
                 <div className="temp">
                   <img src={bunny} alt="weather-img" />
                   <br />
-                  Temperature: {temp}°C/{tempF}°F
+                  Temperature : {temp}°C/{tempF}°F
                   <br />
-                  Wind Speed: {wind} km/hr
+                  Wind Speed : {wind} km/hr
                   <br />
-                  Humidity: {humidity}
+                  Humidity : {humidity}
                   <br />
-                  Last Updated:{" "}
+                  Last Updated :{" "}
                   {moment(date).format("MMMM Do YYYY, h:mm a (dddd)")}
                 </div>
               );
+              //  weather for hot places
             } else if (temp > 20) {
               return (
                 <div className="temp">
                   <img src={hot} alt="weather-img" />
                   <br />
-                  Temperature: {temp}°C/{tempF}°F
+                  Temperature : {temp}°C/{tempF}°F
                   <br />
-                  Wind Speed: {wind} km/hr
+                  Wind Speed : {wind} km/hr
                   <br />
-                  Last Updated:{" "}
+                  Humidity : {humidity}
+                  <br />
+                  Last Updated :{" "}
                   {moment(date).format("MMMM Do YYYY, h:mm a (dddd)")}
                 </div>
               );
-            }else {
+            } else {
               return null;
             }
           })()}
